@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import MinNav from './components/MinNav';
+import DashboardMain from './components/DashboardMain';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+	return (
+			<div className="h-screen overflow-hidden">
+			<Header />
+			<Sidebar />
+			<main className="flex mt-8 ml-12 h-full">
+				<MinNav />
+				<DashboardMain />
+			</main>
+		</div>
+	);
+};
 
 export default App;
