@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiCurrentLocation, BiSolidCalendarEvent } from "react-icons/bi";
-import { PiLetterCirclePFill, PiCurrencyCircleDollarFill } from "react-icons/pi";
+import { PiLetterCirclePFill, PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdContacts, MdOutlineEmail, MdMoreHoriz } from "react-icons/md";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { RiTaskFill } from "react-icons/ri";
@@ -19,7 +19,7 @@ const Sidebar = () => {
 				</li>
 				<li>
 					<a href="#">
-						<PiCurrencyCircleDollarFill className="icon-style" />
+						<PiCurrencyCircleDollarLight className="icon-style" />
 					</a>
 				</li>
 				<li>
