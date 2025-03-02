@@ -61,11 +61,11 @@
 			margin-bottom: 20px;
 		}
 		details ul{
-			margin-bottom: 40px;
+			margin-bottom: 10px;
 		}
 		details,
 		details ul li {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 		.contents {
 			width: calc(100% - 250px);
@@ -149,6 +149,22 @@
 		.cont {
 			background-color: #fff;
 		}
+		.min-nav details summary {
+			position: relative;
+			padding-right: 20px;
+			cursor: pointer;
+		}
+		
+		.min-nav details summary {
+			list-style: none;
+			display: flex;
+			align-items: center;
+		}
+		
+		.min-nav details {
+			position: relative;
+		}
+		
 	</style>
 </head>
 <body>
@@ -210,27 +226,65 @@
 			</div>
 			<div>
 				<details>
-					<summary>Dashboard</summary>
+					<summary>
+						<span>Dashboard</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" style="fill: #000000; width: 30px; height: 30px;">
+							<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+						</svg>
+					</summary>
 					<ul>
-						<li>Dashboard 1</li>
-						<li>Dashboard 2</li>
-						<li>Dashboard 3</li>
+						<li>
+							<details>
+								<summary>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" style="fill: #000000; width: 30px; height: 30px;">
+										<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+									</svg>
+									<span>My dashboards</span>									
+								</summary>
+								<ul>
+									<li>My dashboard</li>
+								</ul>	
+							</details>
+						</li>
 					</ul>
 				</details>
 				<details>
-					<summary>Goals</summary>
+					<summary>
+						<span>Goals</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" style="fill: #000000; width: 30px; height: 30px;">
+							<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+						</svg>
+					</summary>
 					<ul>
-						<li>Dashboard 1</li>
-						<li>Dashboard 2</li>
-						<li>Dashboard 3</li>
+						<li>No goals</li>
 					</ul>
 				</details>
 				<details>
-					<summary>Reports</summary>
+					<summary>
+						<span>Reports</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" style="fill: #000000; width: 30px; height: 30px;">
+							<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+						</svg>
+					</summary>
 					<ul>
-						<li>Dashboard 1</li>
-						<li>Dashboard 2</li>
-						<li>Dashboard 3</li>
+						<details>
+							<summary>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" style="fill: #000000; width: 30px; height: 30px;">
+									<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+								</svg>
+								<span>My reports</span>								
+							</summary>
+							<ul>
+								<li>Deal conversion</li>
+								<li>Deal progress</li>
+								<li>Deals won over time</li>
+								<li>Average value of won deals</li>
+								<li>Deal duration</li>
+								<li>Activities completed</li>
+								<li>Deals lost by reasons</li>
+								<li>Revenue forecast</li>
+							</ul>
+						</details>
 					</ul>
 				</details>
 			</div>

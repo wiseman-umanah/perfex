@@ -1,43 +1,103 @@
 import React from 'react';
 import { IoMdAdd, IoIosSearch } from "react-icons/io";
+import { MdOutlineSpaceDashboard, MdMoreHoriz } from "react-icons/md";
+
 
 const MinNav = () => {
 	return (
 		<section className="p-4 border w-64 h-full bg-gray-50">
 			<div className="flex justify-between mb-5">
 				<div className="flex gap-2">
-					<div className="flex items-center border rounded-md px-3">
+					<div className="flex items-center border rounded-md px-3 border-gray-400">
 						<IoIosSearch className="icon-style mr-1"/>
 						<input type="text" placeholder="Search" className="border-none bg-transparent w-full h-full focus:outline-none" />
 					</div>
-					<div className="border rounded-md w-8 h-8 flex justify-center items-center bg-green-600">
-						<IoMdAdd className="icon-style text-white" />
+					<div className="rounded-md w-7 h-7 flex justify-center items-center bg-green-800">
+						<IoMdAdd className="icon-style text-xs text-white p-1" />
 					</div>
 				</div>
 			</div>
 			<div>
 				<details>
-					<summary>Dashboard</summary>
-					<ul className="list-none mb-10">
-						<li className="mb-5">Dashboard 1</li>
-						<li className="mb-5">Dashboard 2</li>
-						<li className="mb-5">Dashboard 3</li>
+					<summary className='flex items-center font-bold justify-between list-none'>
+						<div className='flex items-center'>
+							<span>Dashboard</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" className="fill-black w-7 h-7">
+								<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+							</svg>
+						</div>
+						<div>
+							<MdMoreHoriz />
+						</div>
+					</summary>
+					<ul className="list-none mb-3">
+						<li className='mb-3'>
+							<details>
+								<summary className='flex items-center list-none mt-3 mb-3 text-gray-400'>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" className="fill-gray-400 w-7 h-7">
+										<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+									</svg>
+									<span>My dashboards</span>
+								</summary>
+								<ul className="list-none mb-3 ml-3">
+									<li className='mb-3'>
+										<div className='flex gap-1 items-center'>
+											<MdOutlineSpaceDashboard />
+											<span>My dashboard</span>
+										</div>
+									</li>
+								</ul>	
+							</details>
+						</li>
 					</ul>
 				</details>
 				<details>
-					<summary>Goals</summary>
-					<ul className="list-none mb-10">
-						<li className="mb-5">Dashboard 1</li>
-						<li className="mb-5">Dashboard 2</li>
-						<li className="mb-5">Dashboard 3</li>
+					<summary className='flex items-center font-bold justify-between list-none mt-3 mb-3'>
+						<div className='flex items-center'>
+							<span>Goals</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" className="fill-black w-7 h-7">
+								<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+							</svg>
+						</div>
+						<div>
+							<MdMoreHoriz />
+						</div>
+					</summary>
+					<ul className="list-none mb-3 ml-3 text-gray-400">
+						<li className='mb-3'>No goals</li>
 					</ul>
 				</details>
 				<details>
-					<summary>Reports</summary>
-					<ul className="list-none mb-10">
-						<li className="mb-5">Dashboard 1</li>
-						<li className="mb-5">Dashboard 2</li>
-						<li className="mb-5">Dashboard 3</li>
+					<summary className='flex items-center font-bold justify-between list-none mt-3 mb-3'>
+						<div className='flex items-center'>
+							<span>Reports</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" className="fill-black w-7 h-7">
+								<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+							</svg>
+						</div>
+						<div>
+							<MdMoreHoriz />
+						</div>
+					</summary>
+					<ul className="list-none mb-3">
+						<details>
+							<summary className='flex items-center list-none mt-3 mb-3 text-gray-400'>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down" className="fill-gray-400 w-7 h-7">
+									<path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+								</svg>
+								<span>My reports</span>								
+							</summary>
+							<ul className="list-none ml-3 text-gray-400">
+								<li className='mb-3'>Deal conversion</li>
+								<li className='mb-3'>Deal progress</li>
+								<li className='mb-3'>Deals won over time</li>
+								<li className='mb-3'>Average value of won deals</li>
+								<li className='mb-3'>Deal duration</li>
+								<li className='mb-3'>Activities completed</li>
+								<li className='mb-3'>Deals lost by reasons</li>
+								<li className='mb-3'>Revenue forecast</li>
+							</ul>
+						</details>
 					</ul>
 				</details>
 			</div>
