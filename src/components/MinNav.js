@@ -1,15 +1,18 @@
 import React from 'react';
-import { IoSearch } from "react-icons/io5";
+import { IoMdAdd, IoIosSearch } from "react-icons/io";
 
 const MinNav = () => {
 	return (
-		<section className="p-4 border border-black w-64 h-full">
+		<section className="p-4 border w-64 h-full bg-gray-50">
 			<div className="flex justify-between mb-5">
-				<div className="search-bar">
-					<input type="text" placeholder="Search" className="p-2 border border-gray-300 rounded w-40 h-5"/>
-					<button className='ml-2'>
-						<IoSearch />	
-					</button>
+				<div className="flex gap-2">
+					<div className="flex items-center border rounded-md px-3">
+						<IoIosSearch className="icon-style mr-1"/>
+						<input type="text" placeholder="Search" className="border-none bg-transparent w-full h-full focus:outline-none" />
+					</div>
+					<div className="border rounded-md w-8 h-8 flex justify-center items-center bg-green-600">
+						<IoMdAdd className="icon-style text-white" />
+					</div>
 				</div>
 			</div>
 			<div>

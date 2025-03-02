@@ -10,7 +10,7 @@ const App = () => {
 			<div className="h-screen overflow-hidden">
 			<Header />
 			<Sidebar />
-			<main className="flex mt-8 ml-12 h-full">
+			<main className="flex mt-14 ml-12 h-full">
 				<MinNav />
 				<DashboardMain />
 			</main>
