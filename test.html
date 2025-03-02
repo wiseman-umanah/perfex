@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+	<style>
+		* {
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 50px;
+			height: 100vh;
+			background-color: #39125b;
+			color: #fff;
+			padding: 10px;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+		header {
+			position: fixed;
+			top: 0;
+			margin-left: 50px;
+			right: 0;
+			left: 0;
+			height: 40px;
+			border: 1px solid #000;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 30px;
+		}
+		main {
+			display: flex;
+			margin-top: 40px;
+			margin-left: 50px;
+			height: 100vh;
+			border: 1px solid #000;
+		}
+		.min-nav {
+			padding: 20px;
+			border: 1px solid #000;
+			width: 250px;
+			height: 100%;
+		}
+		.search {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		details ul{
+			margin-bottom: 40px;
+		}
+		details,
+		details ul li {
+			margin-bottom: 20px;
+		}
+		.contents {
+			width: calc(100% - 250px);
+			height: 100%;
+			border: 1px solid #132dab;
+			display: flex;
+			flex-direction: column;
+		}
+		aside {
+			width: 100%;
+			right: 0;
+			height: 50px;
+			border: 1px solid #832121;
+		}
+		.card-container {
+			display: flex;
+			border: 1px solid #39125b;
+			height: 100%;
+		}
+		.card-tile {
+			width: 100%;
+			border: 1px solid #123a5b;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 20px;
+		}
+		.analytics-1 {
+			width: 100%;
+			height: 200px;
+			background-color: #123a5b;
+			border-radius: 20px;
+		}
+		.analytics-2 {
+			display: flex;
+			gap: 10px;
+		}
+		.small-div {
+			width: 50%;
+			height: 200px;
+			background-color: #123a5b;
+			border-radius: 20px;
+		}
+		.search-bar {
+			display: flex;
+			align-items: center;
+			border: 1px solid #000;
+			border-radius: 20px;
+			padding: 0px 10px;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="left-section">
+			Insights
+		</div>
+		<div class="middle-section">
+			<div class="search-bar">
+				<i class="uil uil-search"></i>
+				<input type="text" placeholder="Search" style="border: none;">
+			</div>
+		</div>
+		<div class="right-section">
+			user-details
+		</div>
+	</header>
+	<nav class="sidebar">
+		<div class="logo">
+			<i class="uil uil-search"></i>
+		</div>
+		<ul>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+			<li><a href="#"><i class="uil uil-search"></i></a></li>
+		</ul>
+	</nav>
+	<main>
+		<section class="min-nav">
+			<div class="search">
+				<div class="search-bar">
+					<input type="text" placeholder="Search">
+					<button>
+						<i class="uil uil-search"></i>
+					</button>
+				</div>
+			</div>
+			<div>
+				<details>
+					<summary>Dashboard</summary>
+					<ul>
+						<li>Dashboard 1</li>
+						<li>Dashboard 2</li>
+						<li>Dashboard 3</li>
+					</ul>
+				</details>
+				<details>
+					<summary>Goals</summary>
+					<ul>
+						<li>Dashboard 1</li>
+						<li>Dashboard 2</li>
+						<li>Dashboard 3</li>
+					</ul>
+				</details>
+				<details>
+					<summary>Reports</summary>
+					<ul>
+						<li>Dashboard 1</li>
+						<li>Dashboard 2</li>
+						<li>Dashboard 3</li>
+					</ul>
+				</details>
+			</div>
+		</section>
+
+		<section class="contents">
+			<aside>
+				top
+			</aside>
+			<div class="card-container">
+				<!-- Card Tile 1	-->
+				<div class="card-tile">
+					<div class="analytics-1"></div>
+					<div class="analytics-2">
+						<div class="small-div"></div>
+						<div class="small-div"></div>
+					</div>
+				</div>
+
+				<!-- Card Tile 2	-->
+				<div class="card-tile">
+					<div class="analytics-1"></div>
+					<div class="analytics-2">
+						<div class="small-div"></div>
+						<div class="small-div"></div>
+					</div>
+					<div class="analytics-1"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
