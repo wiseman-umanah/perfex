@@ -73,6 +73,7 @@
 			border: 1px solid #132dab;
 			display: flex;
 			flex-direction: column;
+			padding: 5px 10px;
 		}
 		aside {
 			width: 100%;
@@ -84,6 +85,7 @@
 			display: flex;
 			border: 1px solid #39125b;
 			height: 100%;
+			gap: 10px;
 		}
 		.card-tile {
 			width: 100%;
@@ -91,7 +93,6 @@
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
-			padding: 20px;
 		}
 		.analytics-1 {
 			width: 100%;
@@ -143,6 +144,10 @@
 			gap: 20px;
 			justify-content: center;
 			align-items: center;
+		}
+
+		.cont {
+			background-color: #fff;
 		}
 	</style>
 </head>
@@ -231,28 +236,56 @@
 			</div>
 		</section>
 
-		<section class="contents">
-			<aside>
-				top
+		<section class="contents" style="background-color: rgb(174, 174, 174);">
+			<aside style="display: flex; justify-content: space-between; align-items: center;">
+				<div>
+					My Dashboard
+				</div>
+				<div style="display: flex;">
+					<div style="display: flex; gap: 10px;">
+						<div style="padding: 0 10px; background-color: white; border-radius: 5px; border: 1px solid grey;">
+							<i class="uil uil-calendar-alt"></i>
+							<span>Period</span>
+						</div>
+						<div style="padding: 0 10px; background-color: white; border-radius: 5px; border: 1px solid grey;">
+							<i class="uil uil-calendar-alt"></i>
+							<span>User</span>
+						</div>
+					</div>
+					<hr style="border: 1px solid grey; margin: 0 10px;">
+					<div style="display: flex; gap: 10px;">
+						<div style="padding: 0 10px; background-color: white; border-radius: 5px; border: 1px solid grey;">
+							<i class="uil uil-calendar-alt"></i>
+							<span>Share</span>
+						</div>
+						<div style="padding: 0 10px; background-color: white; border-radius: 5px; border: 1px solid grey;">
+							<i class="uil uil-calendar-alt"></i>
+							<span>Export</span>
+						</div>
+						<div style="padding: 0 10px; background-color: white; border-radius: 5px; border: 1px solid grey;">
+							<i class="uil uil-ellipsis-h"></i>
+						</div>
+					</div>
+				</div>
 			</aside>
 			<div class="card-container">
 				<!-- Card Tile 1	-->
 				<div class="card-tile">
-					<div class="analytics-1"></div>
+					<div class="analytics-1 cont"></div>
 					<div class="analytics-2">
-						<div class="small-div"></div>
-						<div class="small-div"></div>
+						<div class="small-div cont"></div>
+						<div class="small-div cont"></div>
 					</div>
 				</div>
 
 				<!-- Card Tile 2	-->
 				<div class="card-tile">
-					<div class="analytics-1"></div>
+					<div class="analytics-1 cont"></div>
 					<div class="analytics-2">
-						<div class="small-div"></div>
-						<div class="small-div"></div>
+						<div class="small-div cont"></div>
+						<div class="small-div cont"></div>
 					</div>
-					<div class="analytics-1"></div>
+					<div class="analytics-1 cont"></div>
 				</div>
 			</div>
 		</section>
