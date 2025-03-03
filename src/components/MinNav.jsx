@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { IoMdAdd, IoIosSearch } from "react-icons/io";
 import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdOutlineSpaceDashboard, MdMoreHoriz } from "react-icons/md";
@@ -42,10 +43,10 @@ const MinNav = () => {
 								</summary>
 								<ul className="list-none mb-3 ml-3">
 									<li className='mb-3'>
-										<div className='flex gap-1 items-center'>
+										<Link to="/my-dashboard" className='flex gap-1 items-center'>
 											<MdOutlineSpaceDashboard />
-											<span>My dashboard</span>
-										</div>
+											<span className='truncate'>My dashboard</span>
+										</Link>
 									</li>
 								</ul>	
 							</details>
@@ -89,37 +90,39 @@ const MinNav = () => {
 								<span>My reports</span>								
 							</summary>
 							<ul className="list-none ml-3 text-gray-400">
-								<li className='mb-3 flex gap-2 items-center'>
-									<PiCurrencyCircleDollarLight />
-									<span>Deal conversion</span>
+								<li>
+									<Link to="/reports/my-reports/deals-conversion" className='mb-3 flex gap-2 items-center'>
+										<PiCurrencyCircleDollarLight />
+										<span className='truncate'>Deal conversion</span>
+									</Link>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />
-									<span>Deal progress</span>
+									<span className='truncate'>Deal progress</span>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />
-									<span>Deals won over time</span>
+									<span className='truncate'>Deals won over time</span>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />
-									<span>Average value of won deals</span>
+									<span className='truncate w-full'>Average value of won deals</span>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />
-									<span>Deal duration</span>
+									<span className='truncate'>Deal duration</span>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<BiSolidCalendarEvent />
-									<span>Activities completed</span>
+									<span className='truncate'>Activities completed</span>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />
-									<span>Deals lost by reasons</span>
+									<span className='truncate'>Deals lost by reasons</span>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />
-									<span>Revenue forecast</span>
+									<span className='truncate'>Revenue forecast</span>
 								</li>
 							</ul>
 						</details>

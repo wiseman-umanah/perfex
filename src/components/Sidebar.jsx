@@ -7,7 +7,7 @@ import { RiTaskFill } from "react-icons/ri";
 
 const Sidebar = () => {
 	return (
-		<nav className="fixed top-0 left-0 w-12 h-full bg-purple-900 flex flex-col items-center text-white p-2">
+		<nav className="fixed top-0 left-0 w-12 h-full bg-purple-950 flex flex-col items-center text-white p-2">
 			<div className="mb-5">
 				<PiLetterCirclePFill className="icon-style" />
 			</div>
