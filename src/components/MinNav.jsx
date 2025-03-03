@@ -1,7 +1,8 @@
 import React from 'react';
 import { IoMdAdd, IoIosSearch } from "react-icons/io";
+import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdOutlineSpaceDashboard, MdMoreHoriz } from "react-icons/md";
-
+import { BiSolidCalendarEvent } from "react-icons/bi";
 
 const MinNav = () => {
 	return (
@@ -88,14 +89,38 @@ const MinNav = () => {
 								<span>My reports</span>								
 							</summary>
 							<ul className="list-none ml-3 text-gray-400">
-								<li className='mb-3'>Deal conversion</li>
-								<li className='mb-3'>Deal progress</li>
-								<li className='mb-3'>Deals won over time</li>
-								<li className='mb-3'>Average value of won deals</li>
-								<li className='mb-3'>Deal duration</li>
-								<li className='mb-3'>Activities completed</li>
-								<li className='mb-3'>Deals lost by reasons</li>
-								<li className='mb-3'>Revenue forecast</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Deal conversion</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Deal progress</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Deals won over time</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Average value of won deals</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Deal duration</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<BiSolidCalendarEvent />
+									<span>Activities completed</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Deals lost by reasons</span>
+								</li>
+								<li className='mb-3 flex gap-2 items-center'>
+									<PiCurrencyCircleDollarLight />
+									<span>Revenue forecast</span>
+								</li>
 							</ul>
 						</details>
 					</ul>
