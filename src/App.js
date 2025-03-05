@@ -12,7 +12,7 @@ import Deal from './pages/Deal/Deal';
 import Activity from './pages/Activity/Activity';
 import Contact from './pages/Contact/Contact';
 import People from './pages/Contact/People/People';
-
+import Timeline from './pages/Contact/Timeline/Timeline';
 
 
 const App = () => {
@@ -33,8 +33,8 @@ const App = () => {
 					<Route path='/activity' element={<Activity />} />
 					<Route path='/contact/*' element={<Contact />}>
 						<Route path='people' element={<People />} />
-						{/* <Route path='organization' element={<Organization />} />
-						<Route path='contacts-timeline' element={<ContactsTimeline />} /> */}
+						{/* <Route path='organization' element={<Organization />} /> */}
+						<Route path='contacts-timeline' element={<Timeline />} />
 					</Route>
 				</Routes>
 				<div className='absolute bottom-5 right-5 p-4 bg-purple-900 text-white rounded-full'>

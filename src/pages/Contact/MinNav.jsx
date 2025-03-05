@@ -15,7 +15,7 @@ const MinNav = () => {
 				<HiOutlineBuildingOffice2 className='icon-style'/>
 				<span>Organizations</span>
 			</NavLink>
-			<NavLink to="#" className="flex gap-2 items-center rounded-md p-2 hover:text-purple-900 hover:bg-purple-200">
+			<NavLink to="/contact/contacts-timeline" className="flex gap-2 items-center rounded-md p-2 hover:text-purple-900 hover:bg-purple-200">
 				<RiHeartPulseLine className='icon-style'/>
 				<span>Contacts timeline</span>
 			</NavLink>			
