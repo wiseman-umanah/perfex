@@ -47,7 +47,7 @@ const MinNav = () => {
 						<BiMessageRoundedDetail className='icon-style'/>
 						<span>Messaging</span>
 					</div>
-					<span className="p-2 text-xs bg-purple-700 rounded-full font-bold text-white">BETA</span>
+					<span className="px-1 text-xxs bg-purple-700 rounded-full font-bold text-white">BETA</span>
 				</div>
 			</div>
 		</section>
