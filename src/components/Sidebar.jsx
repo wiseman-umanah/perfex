@@ -24,9 +24,9 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="/activity">
 						<BiSolidCalendarEvent className="icon-style" />
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href="#">
