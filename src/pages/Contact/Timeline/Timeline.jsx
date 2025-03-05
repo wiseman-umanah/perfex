@@ -2,10 +2,15 @@ import React from 'react';
 import { MdMoreHoriz, MdLoop, MdOutlineMailOutline, MdOutlineStickyNote2 } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
-import { IoMdAdd, IoMdArrowDropdown } from "react-icons/io";
+import { IoMdAdd, IoMdArrowDropdown, IoIosChatboxes } from "react-icons/io";
 import { MdOutlineEdit } from "react-icons/md";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { PiCurrencyCircleDollarLight } from "react-icons/pi";
+import { RiListView, RiInbox2Fill, RiSmartphoneFill } from "react-icons/ri";
+import { MdOutlineCheckBox } from "react-icons/md";
+import { PiTimerBold, PiPhoneCallFill } from "react-icons/pi";
+import { ImFlag } from "react-icons/im";
+import { TbCalendarTime } from "react-icons/tb";
 
 
 
@@ -28,14 +33,14 @@ const Timeline = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex gap-1 text-xs'>
-					<MdOutlineEdit />
+				<div className='flex gap-2'>
+					<div className='flex items-center'><MdOutlineEdit /></div>
 					<span>140 people</span>
 					<span>.</span>
-					<MdLoop />
+					<div className='flex items-center'><MdLoop /></div>
 					<span>No frequency set</span>
 					<div className="flex items-center gap-2.5 px-2.5 bg-white rounded border border-gray-400">
-						{/* calendar not solid */}
+						<TbCalendarTime />
 						<span>3 months back</span>
 						<IoMdArrowDropdown />
 					</div>
