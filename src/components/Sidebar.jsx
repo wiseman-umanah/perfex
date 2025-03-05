@@ -29,9 +29,9 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="/contact">
 						<MdContacts className="icon-style" />
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href="#">
