@@ -8,6 +8,7 @@ import DashboardMain from './pages/Dashboards/UserDashboards/DashboardMain';
 import DealsConversion from './pages/Dashboards/Reports/UserReports/DealsConversion';
 import Lead from './pages/Lead/Lead';
 import LeadsInbox from './pages/Lead/LeadInbox/LeadInbox';
+import Deal from './pages/Deal/Deal';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
 					<Route path='/lead/*' element={<Lead />}>
 						<Route path='lead-inbox' element={<LeadsInbox />} />
 					</Route>
+					<Route path='/deal' element={<Deal />} />
 				</Routes>
 				<div className='absolute bottom-5 right-5 p-4 bg-purple-900 text-white rounded-full'>
 					<PiGraduationCapLight className='icon-style'/>

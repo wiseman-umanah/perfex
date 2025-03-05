@@ -19,9 +19,9 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="/deal">
 						<PiCurrencyCircleDollarLight className="icon-style" />
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href="#">
