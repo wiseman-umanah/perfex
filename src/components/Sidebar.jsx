@@ -34,7 +34,7 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/inbox">
 					<MdOutlineEmail className="icon-style" />
 					</a>
 				</li>

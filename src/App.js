@@ -13,6 +13,8 @@ import Activity from './pages/Activity/Activity';
 import Contact from './pages/Contact/Contact';
 import People from './pages/Contact/People/People';
 import Timeline from './pages/Contact/Timeline/Timeline';
+import Inbox from './pages/Inbox/Inbox';
+import InboxMain from './pages/Inbox/InboxMain/InboxMain'; 
 
 
 const App = () => {
@@ -35,6 +37,9 @@ const App = () => {
 						<Route path='people' element={<People />} />
 						{/* <Route path='organization' element={<Organization />} /> */}
 						<Route path='contacts-timeline' element={<Timeline />} />
+					</Route>
+					<Route path='/inbox/*' element={<Inbox />}>
+						<Route path='' element={<InboxMain />} />
 					</Route>
 				</Routes>
 				<div className='absolute bottom-5 right-5 p-4 bg-purple-900 text-white rounded-full'>

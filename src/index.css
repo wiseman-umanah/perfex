@@ -19,3 +19,8 @@ code {
 .icon-style {
     font-size: 1.5rem;
 }
+
+.inbox:hover .notification-badge {
+    background-color: #6b46c1;
+    color: white;
+}
