@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import MinNav from './components/MinNav';
-import DashboardMain from './pages/Dashboards/UserDashboards/DashboardMain';
-import DealsConversion from './pages/Reports/UserReports/DealsConversion';
 import { PiGraduationCapLight } from "react-icons/pi";
+import Dashboard from './pages/Dashboards/Dashboard';
+import DashboardMain from './pages/Dashboards/UserDashboards/DashboardMain';
+import DealsConversion from './pages/Dashboards/Reports/UserReports/DealsConversion';
+import Lead from './pages/Lead/Lead';
+import LeadsInbox from './pages/Lead/LeadInbox/LeadInbox';
 
 
 const App = () => {
@@ -14,13 +16,15 @@ const App = () => {
 			<div className="h-screen overflow-hidden relative">
 				<Header />
 				<Sidebar />
-				<main className="flex mt-14 ml-12 h-full">
-					<MinNav />
-					<Routes>
-						<Route path="/my-dashboard" element={<DashboardMain />} />
-						<Route path="/reports/my-reports/deals-conversion" element={<DealsConversion />} />
-					</Routes>
-				</main>
+				<Routes>
+					<Route path="/dashboard/*" element={<Dashboard />}>
+						<Route path="my-dashboard" element={<DashboardMain />} />
+						<Route path="reports/my-reports/deals-conversion" element={<DealsConversion />} />
+					</Route>
+					<Route path='/lead/*' element={<Lead />}>
+						<Route path='lead-inbox' element={<LeadsInbox />} />
+					</Route>
+				</Routes>
 				<div className='absolute bottom-5 right-5 p-4 bg-purple-900 text-white rounded-full'>
 					<PiGraduationCapLight className='icon-style'/>
 				</div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { IoMdAdd, IoIosSearch } from "react-icons/io";
 import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdOutlineSpaceDashboard, MdMoreHoriz } from "react-icons/md";
@@ -43,10 +43,11 @@ const MinNav = () => {
 								</summary>
 								<ul className="list-none mb-3 ml-3">
 									<li className='mb-3'>
-										<Link to="/my-dashboard" className='flex gap-1 items-center'>
+										{/* /dashboard/my-dashboard */}
+										<NavLink to="/dashboard/my-dashboard" className='flex gap-1 items-center'>
 											<MdOutlineSpaceDashboard />
 											<span className='truncate'>My dashboard</span>
-										</Link>
+										</NavLink>
 									</li>
 								</ul>	
 							</details>
@@ -91,10 +92,11 @@ const MinNav = () => {
 							</summary>
 							<ul className="list-none ml-3 text-gray-400">
 								<li>
-									<Link to="/reports/my-reports/deals-conversion" className='mb-3 flex gap-2 items-center'>
+									{/* /dashboard/reports/my-reports/deals-conversion */}
+									<NavLink to="/dashboard/reports/my-reports/deals-conversion" className='mb-3 flex gap-2 items-center'>
 										<PiCurrencyCircleDollarLight />
 										<span className='truncate'>Deal conversion</span>
-									</Link>
+									</NavLink>
 								</li>
 								<li className='mb-3 flex gap-2 items-center'>
 									<PiCurrencyCircleDollarLight />

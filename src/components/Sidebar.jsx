@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BiCurrentLocation, BiSolidCalendarEvent } from "react-icons/bi";
 import { PiLetterCirclePFill, PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdContacts, MdOutlineEmail, MdMoreHoriz } from "react-icons/md";
@@ -13,9 +14,9 @@ const Sidebar = () => {
 			</div>
 			<ul className="list-none p-0 flex flex-col gap-8 items-center">
 				<li>
-					<a href="#">
+					<Link to="/lead">
 						<BiCurrentLocation className="icon-style" />
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href="#">
@@ -38,9 +39,9 @@ const Sidebar = () => {
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="/dashboard">
 						<BsGraphUpArrow className="icon-style" />
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href="#">
